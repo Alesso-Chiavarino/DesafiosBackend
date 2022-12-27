@@ -15,7 +15,7 @@ class ProductManager{
         return await fs.writeFile(this.path, string,"utf-8")
     }
 
-    async getProduct(){
+    async getProducts(){
         try {
             if(existsSync(this.path)){
                 const productsString = await this.readFile()
@@ -29,7 +29,7 @@ class ProductManager{
         }
     }  
 
-    async getProductById(id){
+    async getProductsById(id){
 
         try {
             const products = await this.getProducts()
