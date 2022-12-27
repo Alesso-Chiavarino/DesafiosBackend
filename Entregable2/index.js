@@ -65,6 +65,20 @@ class ProductManager{
         await this.writeFile(stringList)
         return stringList
     }
+
+    async deleteProduct(id){
+        const products = await this.getProducts()
+        const foundProduct = await this.getProductsById(id)
+
+        const productToDelete = foundProduct;
+
+        const newList = products.filter(prods => prods.id !== productToDelete.id)
+
+        const stringList = await JSON.stringify(newList,null, "\t")
+
+        await this.writeFile(stringList)
+        return stringList
+    }
     
     async createProduct(product){
         try {

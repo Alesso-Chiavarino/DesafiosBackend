@@ -10,7 +10,7 @@ const queries = async ()=>{
         // let products = await manager.getProducts()
         // console.log(products);
 
-        console.log("Nuevo usuario")
+        console.log("Nuevo producto")
         const productDemo = {name: "Lionel", lastname: "Messi", age: 35, curse:"Argentina"};
         await manager.createProduct(productDemo)
 
@@ -18,7 +18,7 @@ const queries = async ()=>{
         products = await manager.getProducts()
         console.log(products);
 
-        console.log("Nuevo usuario")
+        console.log("Nuevo producto")
         const productDemo2 = {name: "Angel", lastname: "Di Maria", age: 34, curse:"Argentina"};
         await manager.createProduct(productDemo2)
 
@@ -26,9 +26,13 @@ const queries = async ()=>{
         products = await manager.getProducts()
         console.log(products);
 
-        console.log("Actualizar usuario")
+        console.log("Actualizar producto")
         const list = await manager.updateProduct(1,{age:24})
         console.log(list)
+
+        console.log("Borrar producto")
+        products = await manager.deleteProduct(6)
+        console.log(products);
 
         
     } catch (error) {

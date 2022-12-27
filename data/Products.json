@@ -35,13 +35,6 @@
 		"curse": "Argentina"
 	},
 	{
-		"id": 6,
-		"name": "Angel",
-		"lastname": "Di Maria",
-		"age": 34,
-		"curse": "Argentina"
-	},
-	{
 		"id": 7,
 		"name": "Lionel",
 		"lastname": "Messi",
@@ -64,6 +57,20 @@
 	},
 	{
 		"id": 10,
+		"name": "Angel",
+		"lastname": "Di Maria",
+		"age": 34,
+		"curse": "Argentina"
+	},
+	{
+		"id": 11,
+		"name": "Lionel",
+		"lastname": "Messi",
+		"age": 35,
+		"curse": "Argentina"
+	},
+	{
+		"id": 12,
 		"name": "Angel",
 		"lastname": "Di Maria",
 		"age": 34,
