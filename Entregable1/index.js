@@ -47,3 +47,5 @@ productManager.addProduct(
   20,
   65
 );
+
+// module.exports = ProductManager;
