@@ -7,8 +7,8 @@ const queries = async ()=>{
 
     try {
         console.log("Primera consulta")
-        // let products = await manager.getProducts()
-        // console.log(products);
+        let products = await manager.getProducts()
+        console.log(products);
 
         console.log("Nuevo producto")
         const productDemo = {name: "Lionel", lastname: "Messi", age: 35, curse:"Argentina"};
